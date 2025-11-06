@@ -167,6 +167,7 @@ a {
     z-index: 1000;
     padding: 15px 20px;
     gap: 20px;
+    height: 70px;
 }
 
 .header-section-contenedor {
@@ -213,6 +214,15 @@ a {
 
 .header-subcontenedor-derecha button {
     padding: 11 15 px;
+}
+
+.boton-menu {
+    display: none;
+    background: none;
+    border: none;
+    color: var(--neutral-0);
+    font-size: 32px;
+    padding: 0;
 }
 
 .hero-section {
@@ -381,6 +391,11 @@ a {
         flex-direction: column;
     }
 
+    .hero-section-contenedor {
+        flex-direction: column;
+    }
+
+    
     .titulo {
         font-size: 40px;
         line-height: 40px;
@@ -390,11 +405,37 @@ a {
         font-size: 36px;
     }
 
-    header nav {
+    .header-subcontenedor-izquierda nav {
         display: none;
     }
 
+    .header-subcontenedor-derecha a {
+        display: none;
+    }
+
+    .header-subcontenedor-derecha img {
+        display: none;
+    }
+
+    .header-subcontenedor-derecha .boton-primario {
+        display: none;
+    }
+
+
+    .boton-menu {
+        display: block;
+    }
+
+    .footer-subcontenedor {
+        flex-direction: column;
+        gap: 30px;
+        text-align: center;
+    }
+
+
 }
+
+
 
 /* Modo Celular */
 @media screen and (max-width:767px) {
@@ -411,6 +452,15 @@ a {
     .subtitulo {
         font-size: 28px;
         line-height: 36px;
+    }
+
+    .section-contenedor {
+        padding: 0 16px;
+    }
+
+    .articulo-politicas {
+        flex-direction: column; 
+        gap: 10px;
     }
 
 }
